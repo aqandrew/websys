@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML5 Geolocation</title>
+  </head>
+  <body>
+    <p id="usersLocation"></p>
+    <button id="getLocation">Get my location!</button>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script>
+      // Wait until the page is loaded
+      $(document).ready(function() {
+        // Add the event listener to the button element with ID = 'getLocation'
+        $("#getLocation").click(function() {
+          // Check if the users browser supports geolocation
+          if (navigator.geolocation) {
+            // Get the user's location
+            navigator.geolocation.getCurrentPosition(displayLocation);
+          }
+          // Display message if user's browswer doesn't support geolocation
+          else {
+            $("#usersLocation").html("Your browswer does not support geolocation.");
+          }
+          function displayLocation(position) {
+            // Place coordinates in the p element with ID 'usersLocation'
+            // which replaces the HTML of the element
+            $("#usersLocation").html("Latitude: " + position.coords.latitute + "<br />Longitude: " + position.coords.longitude);
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
+
+

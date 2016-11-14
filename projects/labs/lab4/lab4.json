@@ -1,0 +1,112 @@
+{
+	"playlist": [
+		{
+			"songName": "Splash",
+			"artist": {
+				"name": "CHON",
+				"url": "https://www.facebook.com/musicofchon/"
+			},
+			"album": {
+				"name": "Grow",
+				"url": "http://www.allmusic.com/album/grow-mw0002821442",
+				"coverArtUrl": "http://cps-static.rovicorp.com/3/JPG_500/MI0003/851/MI0003851359.jpg?partner=allrovi.com"
+			},
+			"date": {
+				"year": 2015,
+				"month": 3,
+				"day": 24
+			},
+			"genres": ["Math Rock"]
+		},
+		{
+			"songName": "Selkies: The Endless Obsession",
+			"artist": {
+				"name": "Between the Buried and Me",
+				"url": "http://www.betweentheburiedandme.com/"
+			},
+			"album": {
+				"name": "Alaska",
+				"url": "http://www.allmusic.com/album/alaska-mw0001994746",
+				"coverArtUrl": "http://hwcdn.allmusic.com/release-covers/400/0000/501/0000501951.jpg"
+			},
+			"date": {
+				"year": 2005,
+				"month": 9,
+				"day": 6
+			},
+			"genres": ["Progressive Metal"]
+		},
+		{
+			"songName": "Absolomb",
+			"artist": {
+				"name": "Periphery",
+				"url": "http://www.periphery.net/"
+			},
+			"album": {
+				"name": "Periphery III: Select Difficulty",
+				"url": "http://www.allmusic.com/album/periphery-iii-select-difficulty-mw0002950085",
+				"coverArtUrl": "http://hwcdn.allmusic.com/release-covers/500/0004/572/0004572184.jpg"
+			},
+			"date": {
+				"year": 2016,
+				"month": 7,
+				"day": 22
+			},
+			"genres": ["Progressive Metal", "Djent"]
+		},
+		{
+			"songName": "Don't Quit Your Day Job",
+			"artist": {
+				"name": "Little Tybee",
+				"url": "http://www.littletybee.com/"
+			},
+			"album": {
+				"name": "Little Tybee",
+				"url": "https://littletybee.bandcamp.com/album/little-tybee",
+				"coverArtUrl": "https://f4.bcbits.com/img/a0861533862_10.jpg"
+			},
+			"date": {
+				"year": 2016,
+				"month": 6,
+				"day": 3
+			},
+			"genres": ["Psychedelic Rock"]
+		},
+		{
+			"songName": "New Topia",
+			"artist": {
+				"name": "This Will Destroy You",
+				"url": "http://thiswilldestroyyou.net/"
+			},
+			"album": {
+				"name": "Another Language",
+				"url": "http://www.allmusic.com/album/another-language-mw0002696482",
+				"coverArtUrl": "http://cps-static.rovicorp.com/3/JPG_1080/MI0003/775/MI0003775110.jpg?partner=allrovi.com"
+			},
+			"date": {
+				"year": 2014,
+				"month": 9,
+				"day": 16
+			},
+			"genres": ["Post-Rock"]
+		},
+		{
+			"songName": "CASINO ROYALE (ft. UGLYFRANK)",
+			"artist": {
+				"name": "KHRIS P",
+				"url": "https://soundcloud.com/khrispkreamteam"
+			},
+			"album": {
+				"name": "YES",
+				"url": "ttp://theup-turn.com/2012/05/08/mixtape-khris-p-kream-yes/",
+				"coverArtUrl": "http://66.media.tumblr.com/tumblr_m3ts5ipD5N1r3v6nno1_500.jpg"
+			},
+			"date": {
+				"year": 2012,
+				"month": 5,
+				"day": 2
+			},
+			"genres": ["Hip-Hop", "Rap"]
+		}
+	]
+}

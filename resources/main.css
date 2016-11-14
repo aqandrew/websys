@@ -1,0 +1,8 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 2em 4em;
+}
+
+#labs, #homework, #classwork {
+	list-style-type: none;
+}

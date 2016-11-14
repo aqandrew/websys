@@ -1,0 +1,28 @@
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+body > *:not(a) {
+	display: inline-block;
+	width: 15%;
+}
+
+body > * {
+	margin-left: 1em;
+}
+
+#coverart:not([src="noalbum.png"]) {
+	float: right;
+	height: 200px;
+	width: 200px;
+}
+
+#genres {
+	list-style-type: none;
+	display: inline;
+	padding-left: 0;
+}
+
+#genres > li:before {
+	content: '-';
+}

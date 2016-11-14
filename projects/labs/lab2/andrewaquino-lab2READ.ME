@@ -1,0 +1,13 @@
+References:
+http://stackoverflow.com/questions/3200249/html-list-style-type-dash
+https://css-tricks.com/useful-nth-child-recipies/
+https://stackoverflow.com/questions/22522290/trying-to-display-a-picture-in-xml/22522362#22522362
+
+An unordered list is semantically correct because since I can almost never pick a single favorite song, every song is listed in no particular order. I used the <strong> tag to bold artist names.
+
+The information in each list element is separated into differing header types in order of relevance to the song, with supplementary information such as release date and genre considered the lowest relevance.
+
+The root element of the XML markup is a <playlist>, since all of the information exists within a playlist. The information for each song is separated hierarchically by <song> elements, with data that encapsulates other data separated further, as with <year>, <month>, and <day> within <date>s.
+
+
+The template provided for linking XML to a CSS stylesheet did not work until I removed :html from the href attribute and added a question mark before the closing angle-bracket.

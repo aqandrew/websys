@@ -1,0 +1,77 @@
+body {
+	margin: 1.5em 6em 3em 6em;
+	font-family: 'Roboto Slab', serif;
+}
+
+li > ul > li {
+	max-width: 80%;
+}
+
+.vcard, body > ul {
+	list-style-type: none;
+}
+
+body > ul > li > ul, #skills {
+	list-style-type: disc;
+}
+
+body > ul > li > ul > li > ul {
+	list-style-type: circle;
+}
+
+.adr {
+	list-style-type: none;
+	position: absolute;
+	right: 6em;
+}
+
+.fn, .tel, .email {
+	text-align: center;
+}
+
+.fn {
+	font-variant: small-caps;
+}
+
+.locality, .region, .postal-code {
+	display: inline;
+}
+
+.locality:after {
+	content: ",";
+}
+
+.email {
+	margin: 0 auto;
+	display: block;
+}
+
+.photo {
+	height: 200px;
+	position: absolute;
+	left: 6em;
+	top: 3em;
+	float: left;
+}
+
+#objective {
+	width: 60%;
+	margin: 0 auto;
+}
+
+p {
+	padding-left: 2.5em;
+}
+
+.date {
+	position: absolute;
+	right: 6em;
+}
+
+.institution, .position-held {
+	display: inline;
+}
+
+.position-held:before {
+	content: " | ";
+}

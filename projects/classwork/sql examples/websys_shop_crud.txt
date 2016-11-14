@@ -1,0 +1,28 @@
+--
+-- Customers
+--
+
+INSERT INTO customers (firstname, lastname) VALUES ('John', 'Smith');
+INSERT INTO customers (firstname, lastname) VALUES ('Foo', 'Bar');
+INSERT INTO customers (firstname, lastname) VALUES ('Baz', 'Bang');
+
+--
+-- Products 
+--
+
+INSERT INTO products (name, price) VALUES ('Skittles', 0.99);
+INSERT INTO products (name, price) VALUES ('M&Ms', 0.59);
+INSERT INTO products (name, price) VALUES ('Sour Patch Kids', 1.99);
+INSERT INTO products (name, price) VALUES ('Compy 486', 1999.99);
+
+-- Select everyone's first name
+-- SELECT firstname FROM customers;
+
+-- Select customer 2
+-- SELECT * FROM customers WHERE cid=2;
+
+-- Change customer 2's name to Jane Smith
+-- UPDATE customers SET firstname='Jane', lastname='Smith' WHERE cid=2;
+
+-- Remove product 4
+-- DELETE FROM products WHERE pid=4;

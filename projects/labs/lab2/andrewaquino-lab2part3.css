@@ -1,0 +1,79 @@
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.not-table {
+	list-style-type: none;
+	border: 5px dashed black;
+	display: inline-block;
+	margin: 1em 2em;
+	padding: 0;
+	width: 95%;
+	text-align: center;
+}
+
+.genre-list {
+	list-style-type: none;
+}
+
+.row {
+	width: 100%;
+	list-style-type: none;
+	vertical-align: middle;
+}
+
+ul.row > li:nth-child(n) {
+	float: left;
+	width: 16%;
+}
+
+ul.row:not(.header) > li:nth-child(-n+5) {
+	padding-top: 100px;
+}
+
+.header {
+	font-weight: 900;
+}
+
+.cover-art {
+	height: 200px;
+	width: 200px;
+}
+
+h1 {
+	text-align: center;
+}
+
+strong {
+	font-size: 1.2em;
+}
+
+h3, h4, h5 {
+	margin-top: 0;
+}
+
+h3 {
+	font-variant: small-caps;
+}
+
+#favorite-song {
+	color: green;
+}
+
+h4 {
+	font-style: italic;
+}
+
+.genre-list > li:before {
+	content: "-";
+	margin-left: -2.5em;
+}
+
+h5, .genre-list {
+	font-size: 0.8em;
+}
+
+#end-message {
+	margin: 1em 0;
+	font-style: italic;
+}

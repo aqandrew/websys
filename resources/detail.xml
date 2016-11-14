@@ -1,0 +1,171 @@
+<projects>
+	<semester-project>
+		<name>
+			FixxSquared
+		</name>
+		<description>
+			This is a temporary link to the Fixx user landing.
+		</description>
+		<url>
+			projects/FixxSquared/landingFixx.html
+		</url>
+	</semester-project>
+	
+	<labs>
+		<lab>
+			<name>
+				Lab 1
+			</name>
+			<description>
+				Lab 1 description goes here
+			</description>
+			<url>
+				projects/labs/lab1
+			</url>
+		</lab>
+		
+		<lab>
+			<name>
+				Lab 2
+			</name>
+			<description>
+				Lab 2 description goes here
+			</description>
+			<url>
+				projects/labs/lab2/andrewaquino-lab2part3.html
+			</url>
+		</lab>
+		
+		<lab>
+			<name>
+				Lab 3
+			</name>
+			<description>
+				Lab 3 description goes here
+			</description>
+			<url>
+				projects/labs/lab3/lab3.html
+			</url>
+		</lab>
+		
+		<lab>
+			<name>
+				Lab 4
+			</name>
+			<description>
+				Lab 4 description goes here
+			</description>
+			<url>
+				projects/labs/lab4/lab4.html
+			</url>
+		</lab>
+		
+		<lab>
+			<name>
+				Lab 5
+			</name>
+			<description>
+				Lab 5 description goes here
+			</description>
+			<url>
+				projects/labs/lab5/lab5.html
+			</url>
+		</lab>
+		
+		<lab>
+			<name>
+				Lab 8
+			</name>
+			<description>
+				Lab 8 description goes here
+			</description>
+			<url>
+				projects/labs/lab8
+			</url>
+		</lab>
+		
+		<lab>
+			<name>
+				Lab 9
+			</name>
+			<description>
+				Lab 9 has a description!
+			</description>
+			<url>
+				projects/labs/lab9
+			</url>
+		</lab>
+	</labs>
+	
+	<homeworks>
+		<homework>
+			<name>
+				Homework 1
+			</name>
+			<description>
+				Homework 1 description goes here
+			</description>
+			<url>
+				projects/homeworks/homework1/hw1.html
+			</url>
+		</homework>
+		<homework>
+			<name>
+				Homework 2
+			</name>
+			<description>
+				WhatTheHex, a hexadecimal color guessing game.
+			</description>
+			<url>
+				projects/homeworks/homework2/team5-hw2.html
+			</url>
+		</homework>
+	</homeworks>
+	
+	<classworks>
+		<classwork>
+			<name>
+				HTML E-mail Signature
+			</name>
+			<description>
+				I'll probably use this as a footer.
+			</description>
+			<url>
+				projects/classwork/signature/signature.html
+			</url>
+		</classwork>
+		<classwork>
+			<name>
+				jQuery Geolocation
+			</name>
+			<description>
+				Description goes here.
+			</description>
+			<url>
+				projects/classwork/geolocation/geolocation.html
+			</url>
+		</classwork>
+		<classwork>
+			<name>
+				PHP Exercise 1
+			</name>
+			<description>
+				Here's a description.
+			</description>
+			<url>
+				projects/classwork/php exercises/lec14inClass1-oop-student/oop - student.php
+			</url>
+		</classwork>
+		<classwork>
+			<name>
+				PHP Exercise 2
+			</name>
+			<description>
+				Here's a description.
+			</description>
+			<url>
+				projects/classwork/php exercises/lec14inClass2-forms/lec14_forms.php
+			</url>
+		</classwork>
+	</classworks>
+</projects>

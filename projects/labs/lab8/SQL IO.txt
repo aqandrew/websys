@@ -1,0 +1,149 @@
+1. Add address fields (street, city, st, zip) to the students table
+
+	ALTER TABLE `students` ADD `street` VARCHAR(100) NULL AFTER `phone`, ADD `city` VARCHAR(100) NULL AFTER `street`, ADD `state` VARCHAR(100) NULL AFTER `city`, ADD `zip` INT(5) NULL AFTER `state`;
+	
+		Table students has been altered successfully.
+	
+2. Add section and year fields to the courses table
+
+	ALTER TABLE `courses` ADD `section` INT(2) NULL AFTER `title`, ADD `year` INT(4) NULL AFTER `section`;
+	
+		Table courses has been altered successfully.
+	
+3. CREATE a grades table containing
+id (int primary key, auto increment)
+crn (foreign key)
+rin (foreign key)
+grade (int 3 not null)
+
+	CREATE TABLE `websyslab8`.`grades` ( `id` INT NOT NULL AUTO_INCREMENT , `crn` INT(11) NULL , `rin` INT(9) NULL , `grade` INT(3) NOT NULL , PRIMARY KEY (`id`), INDEX (`crn`), INDEX (`rin`)) ENGINE = InnoDB;
+	
+		[No output for first query]
+	
+	ALTER TABLE `grades` ADD CONSTRAINT `grade_crn` FOREIGN KEY (`crn`) REFERENCES `websyslab8`.`courses`(`crn`) ON DELETE RESTRICT ON UPDATE RESTRICT; ALTER TABLE `grades` ADD CONSTRAINT `grade_rin` FOREIGN KEY (`rin`) REFERENCES `websyslab8`.`students`(`rin`) ON DELETE RESTRICT ON UPDATE RESTRICT;
+	
+		Your SQL query has been executed successfully.
+	
+4. INSERT at least 10 courses into the courses table
+
+	INSERT INTO `courses` (`crn`, `prefix`, `number`, `title`, `section`, `year`) VALUES ('38611', 'ARTS', '1010', 'Introduction to Music and Sound', '01', '2017'), ('35301', 'ARTS', '1020', 'Media Studio: Imaging', '01', '2017'), ('35303', 'ARTS', '1020', 'Media Studio: Imaging', '04', '2017'), ('39027', 'ARTS', '1030', 'Digital Filmmaking', '01', '2017'), ('38182', 'ARTS', '1040', 'Art for Interactive Media', '01', '2017'), ('39117', 'ARTS', '1050', 'Art History: Paleolithic to Contemporary', '01', '2017'), ('39271', 'ARTS', '1050', 'Art History: Paleolithic to Contemporary', '02', '2017'), ('37876', 'ARTS', '1200', 'Basic Drawing', '01', '2017'), ('35356', 'ARTS', '2020', 'Music and Technology I', '01', '2017'), ('37880', 'ARTS', '4220', 'Painting', '01', '2017');
+	
+		10 rows inserted. (Query took 0.0200 seconds.)
+		
+5. INSERT at least 10 students into the students table
+
+	INSERT INTO `students` (rin, rcsID, first_name, last_name, alias, phone, street, city, state, zip) VALUES ('647433053', 'perkia', 'Antonio', 'Perkins', 'Benicar', '13051177794', '29730 Village Hill', 'Miami', 'FL', '33158'), ('859439651', 'webbh', 'Harry', 'Webb', 'Prednisolone', '19711726370', '6 Northport Street', 'Salem', 'OR', '97312'), ('218967210', 'tuckep7', 'Phyllis', 'Tucker', 'Warfarin Sodium', '13091148908', '8089 Kipling Way', 'Peoria', 'IL', '61640'), ('560588858', 'freemb2', 'Barbara', 'Freeman', 'LEVOFLOXACIN', '15627127180', '6 Hintze Plaza', 'Long Beach', 'CA', '90831'), ('400149295', 'bishoa3', 'Angela', 'Bishop', 'childrens wal tap', '19161944954', '31 Hollow Ridge Place', 'Sacramento', 'CA', '94250'), ('851067762', 'lewisj', 'Jeremy', 'Lewis', 'BuPROPion Hydrochloride', '15128755530', '68 Tony Alley', 'Austin', 'TX', '78715'), ('492222908', 'jenkip8', 'Paul', 'Jenkins', 'Cold Sore Complex', '14692016476', '82 Tomscot Drive', 'Irving', 'TX', '75062'), ('358570031', 'wilsoa3', 'Arthur', 'Wilson', 'Aveeno Eczema Therapy Moisturizing', '13184772556', '6 Delaware Court', 'Shreveport', 'LA', '71115'),  ('861826167', 'howelg6', 'Gary', 'Howell', 'Exuviance CoverBlend Concealing Treatment Makeup', '18183930256', '1 Crest Line Lane', 'Northridge', 'CA', '91328'), ('383075255', 'romerw5', 'William', 'Romero', 'WU YANG BRAND MEDICATED PLASTER', '14105881274', '009 Magdeline Street', 'Baltimore', 'MD', '21203');
+	
+		Your SQL query has been executed successfully.
+		10 rows inserted. (Query took 0.0200 seconds.)
+		
+6. ADD 20 grades into the grades table
+
+	INSERT INTO `grades` (id, crn, rin, grade) VALUES
+	('1', '35301', '218967210', '7'), ('2', '35301', '851067762', '420'), ('3', '35301', '492222908', '666'), ('4', '35301', '400149295', '311'), ('5', '35301', '383075255', '911'), ('6', '37876', '218967210', '0'), ('7', '37876', '560588858', '0'), ('8', '37876', '851067762', '0'), ('9', '37876', '492222908', '0'), ('10', '37876', '400149295', '0'), ('11', '39271', '218967210', '6'), ('12', '39271', '358570031', '5'), ('13', '39271', '560588858', '4'), ('14', '39271', '851067762', '3'), ('15', '39271', '492222908', '33'), ('16', '37880', '218967210', '67'), ('17', '37880', '560588858', '99'), ('18', '37880', '851067762', '69'), ('19', '37880', '358570031', '5'), ('20', '37880', '851067762', '1');
+	
+		Your SQL query has been executed successfully.
+		20 rows inserted. (Query took 0.0103 seconds.)
+		
+7. list all students' data in the following sequences;
+	by rin,
+	
+		SELECT * FROM `students` ORDER BY `students`.`rin` ASC
+		
+			rin 1 rcsID first_name last_name alias phone street city state zip
+			218967210 tuckep7 Phyllis Tucker Warfarin Sodium 2147483647 8089 Kipling Way Peoria IL 61640
+			358570031 wilsoa3 Arthur Wilson Aveeno Eczema Therapy Moisturizing 2147483647 6 Delaware Court Shreveport LA 71115
+			383075255 romerw5 William Romero WU YANG BRAND MEDICATED PLASTER 2147483647 009 Magdeline Street Baltimore MD 21203
+			400149295 bishoa3 Angela Bishop childrens wal tap 2147483647 31 Hollow Ridge Place Sacramento CA 94250
+			492222908 jenkip8 Paul Jenkins Cold Sore Complex 2147483647 82 Tomscot Drive Irving TX 75062
+			560588858 freemb2 Barbara Freeman LEVOFLOXACIN 2147483647 6 Hintze Plaza Long Beach CA 90831
+			647433053 perkia Antonio Perkins Benicar 2147483647 29730 Village Hill Miami FL 33158
+			851067762 lewisj Jeremy Lewis BuPROPion Hydrochloride 2147483647 68 Tony Alley Austin TX 78715
+			859439651 webbh Harry Webb Prednisolone 2147483647 6 Northport Street Salem OR 97312
+			861826167 howelg6 Gary Howell Exuviance CoverBlend Concealing Treatment Makeup 2147483647 1 Crest Line Lane Northridge CA 91328
+			
+			Showing rows 0 - 9 (10 total, Query took 0.0010 seconds.) [rin: 218967210... - 861826167...]
+	
+	last name,
+	
+		SELECT * FROM `students` ORDER BY `students`.`last_name` ASC
+			
+			rin rcsID first_name last_name 1 alias phone street city state zip
+			400149295 bishoa3 Angela Bishop childrens wal tap 2147483647 31 Hollow Ridge Place Sacramento CA 94250
+			560588858 freemb2 Barbara Freeman LEVOFLOXACIN 2147483647 6 Hintze Plaza Long Beach CA 90831
+			861826167 howelg6 Gary Howell Exuviance CoverBlend Concealing Treatment Makeup 2147483647 1 Crest Line Lane Northridge CA 91328
+			492222908 jenkip8 Paul Jenkins Cold Sore Complex 2147483647 82 Tomscot Drive Irving TX 75062
+			851067762 lewisj Jeremy Lewis BuPROPion Hydrochloride 2147483647 68 Tony Alley Austin TX 78715
+			647433053 perkia Antonio Perkins Benicar 2147483647 29730 Village Hill Miami FL 33158
+			383075255 romerw5 William Romero WU YANG BRAND MEDICATED PLASTER 2147483647 009 Magdeline Street Baltimore MD 21203
+			218967210 tuckep7 Phyllis Tucker Warfarin Sodium 2147483647 8089 Kipling Way Peoria IL 61640
+			859439651 webbh Harry Webb Prednisolone 2147483647 6 Northport Street Salem OR 97312
+			358570031 wilsoa3 Arthur Wilson Aveeno Eczema Therapy Moisturizing 2147483647 6 Delaware Court Shreveport LA 71115
+			
+			Showing rows 0 - 9 (10 total, Query took 0.0073 seconds.) [last_name: BISHOP... - WILSON...]
+	
+	RCSid, and
+	
+		SELECT * FROM `students` ORDER BY `students`.`rcsID` ASC
+		
+			rin rcsID 1 first_name last_name alias phone street city state zip
+			400149295 bishoa3 Angela Bishop childrens wal tap 2147483647 31 Hollow Ridge Place Sacramento CA 94250
+			560588858 freemb2 Barbara Freeman LEVOFLOXACIN 2147483647 6 Hintze Plaza Long Beach CA 90831
+			861826167 howelg6 Gary Howell Exuviance CoverBlend Concealing Treatment Makeup 2147483647 1 Crest Line Lane Northridge CA 91328
+			492222908 jenkip8 Paul Jenkins Cold Sore Complex 2147483647 82 Tomscot Drive Irving TX 75062
+			851067762 lewisj Jeremy Lewis BuPROPion Hydrochloride 2147483647 68 Tony Alley Austin TX 78715
+			647433053 perkia Antonio Perkins Benicar 2147483647 29730 Village Hill Miami FL 33158
+			383075255 romerw5 William Romero WU YANG BRAND MEDICATED PLASTER 2147483647 009 Magdeline Street Baltimore MD 21203
+			218967210 tuckep7 Phyllis Tucker Warfarin Sodium 2147483647 8089 Kipling Way Peoria IL 61640
+			859439651 webbh Harry Webb Prednisolone 2147483647 6 Northport Street Salem OR 97312
+			358570031 wilsoa3 Arthur Wilson Aveeno Eczema Therapy Moisturizing 2147483647 6 Delaware Court Shreveport LA 71115
+		
+			Showing rows 0 - 9 (10 total, Query took 0.0007 seconds.) [rcsID: BISHOA3... - WILSOA3...]
+	
+	firstname
+	
+		SELECT * FROM `students` ORDER BY `students`.`first_name` ASC
+		
+			rin rcsID first_name 1 last_name alias phone street city state zip
+			400149295 bishoa3 Angela Bishop childrens wal tap 2147483647 31 Hollow Ridge Place Sacramento CA 94250
+			647433053 perkia Antonio Perkins Benicar 2147483647 29730 Village Hill Miami FL 33158
+			358570031 wilsoa3 Arthur Wilson Aveeno Eczema Therapy Moisturizing 2147483647 6 Delaware Court Shreveport LA 71115
+			560588858 freemb2 Barbara Freeman LEVOFLOXACIN 2147483647 6 Hintze Plaza Long Beach CA 90831
+			861826167 howelg6 Gary Howell Exuviance CoverBlend Concealing Treatment Makeup 2147483647 1 Crest Line Lane Northridge CA 91328
+			859439651 webbh Harry Webb Prednisolone 2147483647 6 Northport Street Salem OR 97312
+			851067762 lewisj Jeremy Lewis BuPROPion Hydrochloride 2147483647 68 Tony Alley Austin TX 78715
+			492222908 jenkip8 Paul Jenkins Cold Sore Complex 2147483647 82 Tomscot Drive Irving TX 75062
+			218967210 tuckep7 Phyllis Tucker Warfarin Sodium 2147483647 8089 Kipling Way Peoria IL 61640
+			383075255 romerw5 William Romero WU YANG BRAND MEDICATED PLASTER 2147483647 009 Magdeline Street Baltimore MD 21203
+			
+			Showing rows 0 - 9 (10 total, Query took 0.0006 seconds.) [first_name: ANGELA... - WILLIAM...]
+			
+8. list all students first name and last name if their grade in any course was higher than a 90 (make sure at least one person fits the criterion
+
+	SELECT first_name, last_name FROM students, grades WHERE students.rin = grades.rin AND grades.grade > 90;
+	
+		first_name last_name
+		William Romero
+		Angela Bishop
+		Paul Jenkins
+		Barbara Freeman
+		Jeremy Lewis
+	
+		Showing rows 0 - 4 (5 total, Query took 0.0005 seconds.)
+		
+9. list out the average grade in the second course
+	
+	SELECT AVG(`grade`) FROM `grades` `grade1` WHERE (2-1) = (SELECT COUNT(DISTINCT(`grade2`.`crn`))
+	FROM `grades` `grade2` WHERE `grade2`.`crn` < `grade1`.`crn`)
+	
+		AVG(`grade`)
+		0.0000
+		
+		Showing rows 0 - 0 (1 total, Query took 0.0013 seconds.)
+		
+10. list out the number of students
+
+	SELECT COUNT(*) FROM `students`
+	
+		COUNT(*)
+		10

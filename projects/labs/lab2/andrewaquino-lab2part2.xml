@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<playlist>
+	<song>
+		<title>
+			Splash
+		</title>
+		<artist>
+			<artist-name>CHON</artist-name>
+			<artist-website>https://www.facebook.com/musicofchon/</artist-website>
+		</artist>
+		<album>
+			<album-name>Grow</album-name>
+			<album-website>http://www.allmusic.com/album/grow-mw0002821442</album-website>
+		</album>
+		<cover-art>
+			<url>
+				http://cps-static.rovicorp.com/3/JPG_500/MI0003/851/MI0003851359.jpg?partner=allrovi.com
+			</url>
+		</cover-art>
+		<date>
+			<year>2015</year>
+			<month>March</month>
+			<day>24</day>
+		</date>
+		<genre>
+			Math Rock
+		</genre>
+	</song>
+	<song>
+		<title>
+			Selkies: The Endless Obsession
+		</title>
+		<artist>
+			<artist-name>Between the Buried and Me</artist-name>
+			<artist-website>http://www.betweentheburiedandme.com/</artist-website>
+		</artist>
+		<album>
+			<album-name>Alaska</album-name>
+			<album-website>http://www.allmusic.com/album/alaska-mw0001994746</album-website>
+		</album>
+		<cover-art>
+			<url>http://hwcdn.allmusic.com/release-covers/400/0000/501/0000501951.jpg</url>
+		</cover-art>
+		<date>
+			<year>2005</year>
+			<month>September</month>
+			<day>6</day>
+		</date>
+		<genre>
+			Progressive Metal
+		</genre>
+	</song>
+	<song>
+		<title>
+			Absolomb
+		</title>
+		<artist>
+			<artist-name>Periphery</artist-name>
+			<artist-website>http://www.periphery.net/</artist-website>
+		</artist>
+		<album>
+			<album-name>Periphery III: Select Difficulty</album-name>
+			<album-website>http://www.allmusic.com/album/periphery-iii-select-difficulty-mw0002950085</album-website>
+		</album>
+		<cover-art>
+			<url>http://hwcdn.allmusic.com/release-covers/500/0004/572/0004572184.jpg</url>
+		</cover-art>
+		<date>
+			<year>2016</year>
+			<month>July</month>
+			<day>22</day>
+		</date>
+		<genre>
+			Progressive Metal
+		</genre>
+		<genre>
+			Djent
+		</genre>
+	</song>
+	<song>
+		<title>
+			Don't Quit Your Day Job
+		</title>
+		<artist>
+			<artist-name>Little Tybee</artist-name>
+			<artist-website>http://www.littletybee.com/</artist-website>
+		</artist>
+		<album>
+			<album-name>Little Tybee</album-name>
+			<album-website>https://littletybee.bandcamp.com/album/little-tybee</album-website>
+		</album>
+		<cover-art>
+			<url>https://f4.bcbits.com/img/a0861533862_10.jpg</url>
+		</cover-art>
+		<date>
+			<year>2016</year>
+			<month>June</month>
+			<day>3</day>
+		</date>
+		<genre>
+			Folk
+		</genre>
+		<genre>
+			Psychedelic Rock
+		</genre>
+	</song>
+	<song>
+		<title>
+			New Topia
+		</title>
+		<artist>
+			<artist-name>This Will Destroy You</artist-name>
+			<artist-website>http://thiswilldestroyyou.net/</artist-website>
+		</artist>
+		<album>
+			<album-name>Another Language</album-name>
+			<album-website>http://www.allmusic.com/album/another-language-mw0002696482</album-website>
+		</album>
+		<cover-art>
+			<url>http://cps-static.rovicorp.com/3/JPG_1080/MI0003/775/MI0003775110.jpg?partner=allrovi.com</url>
+		</cover-art>
+		<date>
+			<year>2014</year>
+			<month>September</month>
+			<day>16</day>
+		</date>
+		<genre>
+			Post-Rock
+		</genre>
+	</song>
+	<song>
+		<title>
+			CASINO ROYALE (ft. UGLYFRANK)
+		</title>
+		<artist>
+			<artist-name>KHRIS P</artist-name>
+			<artist-website>https://soundcloud.com/khrispkreamteam</artist-website>
+		</artist>
+		<album>
+			<album-name>YES</album-name>
+			<album-website>http://theup-turn.com/2012/05/08/mixtape-khris-p-kream-yes/</album-website>
+		</album>
+		<cover-art>
+				<url>http://66.media.tumblr.com/tumblr_m3ts5ipD5N1r3v6nno1_500.jpg</url>
+		</cover-art>
+		<date>
+			<year>2012</year>
+			<month>May</month>
+			<day>2</day>
+		</date>
+		<genre>
+			Hip-Hop
+		</genre>
+		<genre>
+			Rap
+		</genre>
+	</song>
+</playlist>

@@ -1,0 +1,24 @@
+song {
+	display: block;
+	width: 100%;
+	clear: both;
+}
+
+title {
+	font-size: 0.8em;
+}
+
+artist-name {
+	color: blue;
+}
+
+album-name {
+	font-style: italic;
+}
+
+img {
+	height: 200px;
+	width: 200px;
+	float: right;
+	margin-bottom: 1em;
+}
