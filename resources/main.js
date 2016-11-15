@@ -17,8 +17,13 @@ function parseXml(document) {
 		let projectName = $(this).find('name').text().trim();
 		let projectDescription = $(this).find('description').text().trim();
 		
-		$('#semester-project').append(
-			'<li><a href="' + projectUrl + '">' + projectName + '</a> | ' + projectDescription + '</li>'
+		$('#semester-project-content').append(
+			'<div class="col-lg-4 col-lg-offset-2">' +
+				'<p><a href="' + projectUrl + '">' + projectName +
+				'</a></p>' + '</div>' +
+			'<div class="col-lg-4"><p>' +
+				projectDescription +
+			'</p></div>'
 		);
 	});
 	
@@ -27,8 +32,8 @@ function parseXml(document) {
 		let labName = $(this).find('name').text().trim();
 		let labDescription = $(this).find('description').text().trim();
 		
-		$('#labs').append(
-			'<li><a href="' + labUrl + '">' + labName + '</a> | ' + labDescription + '</li>'
+		$('#lab-row').append(
+			'<div class="col-sm-4 portfolio-item"><a href="' + labUrl + '"><h2>' + labName + '</h2></a><p>' + labDescription + '</p></div>'
 		);
 	});
 	
@@ -37,8 +42,8 @@ function parseXml(document) {
 		let homeworkName = $(this).find('name').text().trim();
 		let homeworkDescription = $(this).find('description').text().trim();
 		
-		$('#homework').append(
-			'<li><a href="' + homeworkUrl + '">' + homeworkName + '</a> | ' + homeworkDescription + '</li>'
+		$('#homework-row').append(
+			'<div class="col-lg-6 homework-div"><a href="' + homeworkUrl + '"><h2>' + homeworkName + '</h2></a><p>' + homeworkDescription + '</p></div>'
 		);
 	});
 	
@@ -47,8 +52,8 @@ function parseXml(document) {
 		let classworkDescription = $(this).find('description').text().trim();
 		let classworkName = $(this).find('name').text().trim();
 																		 
-		$('#classwork').append(
-			'<li><a href="' + classworkUrl + '">' + classworkName + '</a> | ' + classworkDescription + '</li>'
+		$('#classwork-row').append(
+			'<div class="col-lg-4"><a href="' + classworkUrl + '"><h2>' + classworkName + '</h2></a><p>' + classworkDescription + '</p></div>'
 		);
 	});
 }

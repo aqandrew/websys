@@ -1,8 +1,11 @@
-body {
-	font-family: 'Roboto', sans-serif;
-	margin: 2em 4em;
+#labs, #homework, #classwork, #semester-project {
+	list-style-type: none;
 }
 
-#labs, #homework, #classwork {
-	list-style-type: none;
+.success a {
+	color: white;
+}
+
+.portfolio-item, .homework-div {
+	text-align: center;
 }
