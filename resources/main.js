@@ -5,6 +5,17 @@ $(document).ready(function () {
 		success: parseXml,
 		error: loadFail
 	});
+	
+	$('div').hover( // TODO should be .hover-control
+		function () {
+			$(this).find('.hover-content').css('display', 'block');
+			//console.log('you mousedin on ' + $(this));
+		},
+		function () {
+			$(this).find('.hover-content').css('display', 'none');
+			//console.log('you mousedout on ' + $(this));
+		}
+	);
 });
 
 function loadFail () {
@@ -20,10 +31,10 @@ function parseXml(document) {
 		$('#semester-project-content').append(
 			'<div class="col-lg-4 col-lg-offset-2">' +
 				'<p><a href="' + projectUrl + '">' + projectName +
-				'</a></p>' + '</div>' +
+				'</a><div class="hover-content"></p>' + '</div>' +
 			'<div class="col-lg-4"><p>' +
 				projectDescription +
-			'</p></div>'
+			'</p></div></div>'
 		);
 	});
 	
@@ -33,7 +44,9 @@ function parseXml(document) {
 		let labDescription = $(this).find('description').text().trim();
 		
 		$('#lab-row').append(
-			'<div class="col-sm-4 portfolio-item"><a href="' + labUrl + '"><h2>' + labName + '</h2></a><p>' + labDescription + '</p></div>'
+			'<div class="col-sm-4 portfolio-item hover-control"><a href="' + labUrl + '"><h2>' + labName + '</h2></a>' +
+			'<div class="hover-content"><p>' + labDescription + '</p></div>' +
+			'</div>'
 		);
 	});
 	

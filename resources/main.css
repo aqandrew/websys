@@ -9,3 +9,7 @@
 .portfolio-item, .homework-div {
 	text-align: center;
 }
+
+.portfolio-item > div {
+	display: none;
+}
