@@ -17,7 +17,7 @@
 				Lab 1
 			</name>
 			<description>
-				Lab 1 description goes here
+				PHP Setup
 			</description>
 			<url>
 				projects/labs/lab1
@@ -29,7 +29,7 @@
 				Lab 2
 			</name>
 			<description>
-				Lab 2 description goes here
+				Semantic HTML and XML
 			</description>
 			<url>
 				projects/labs/lab2/andrewaquino-lab2part3.html
@@ -41,7 +41,7 @@
 				Lab 3
 			</name>
 			<description>
-				Lab 3 description goes here
+				JavaScript and the DOM
 			</description>
 			<url>
 				projects/labs/lab3/lab3.html
@@ -53,7 +53,7 @@
 				Lab 4
 			</name>
 			<description>
-				Lab 4 description goes here
+				AJAX/JSON
 			</description>
 			<url>
 				projects/labs/lab4/lab4.html
@@ -65,7 +65,7 @@
 				Lab 5
 			</name>
 			<description>
-				Lab 5 description goes here
+				Frontend Optimization
 			</description>
 			<url>
 				projects/labs/lab5/lab5.html
@@ -77,7 +77,7 @@
 				Lab 8
 			</name>
 			<description>
-				Lab 8 description goes here
+				SQL
 			</description>
 			<url>
 				projects/labs/lab8
@@ -89,10 +89,22 @@
 				Lab 9
 			</name>
 			<description>
-				Lab 9 has a description!
+				PHP and PDO
 			</description>
 			<url>
 				projects/labs/lab9
+			</url>
+		</lab>
+		
+		<lab>
+			<name>
+				Lab 10
+			</name>
+			<description>
+				PHP and PostgreSQL
+			</description>
+			<url>
+				projects/labs/lab10
 			</url>
 		</lab>
 	</labs>

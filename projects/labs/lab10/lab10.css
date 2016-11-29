@@ -1,0 +1,13 @@
+body {
+	margin: 0px 1em !important;
+	background-color: #261635 !important;
+	color: #ddd !important;
+}
+
+.row {
+	background-color: #4f2f70;
+	padding-bottom: 15px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	color: black;
+}
